@@ -68,7 +68,7 @@ jobs:
       - test
 
     env:
-      REACT_APP_MOVIE_API_URL: http://backend:5000
+      REACT_APP_MOVIE_API_URL: http://a9f4caad1bca546b88d7d9df79c6cd5-1051043563.us-east-1.elb.amazonaws.com
 
     steps:
       - name: Checkout code
