@@ -14,7 +14,7 @@ defaults:
 
 env:
   AWS_REGION: us-east-1
-  ECR_REPOSITORY: 3901440247.dkr.ecr.us-east-1.amazonaws.com/frontend
+  ECR_REPOSITORY: 390144140247.dkr.ecr.us-east-1.amazonaws.com/frontend
   EKS_CLUSTER_NAME: cluster
 
 jobs:
@@ -83,7 +83,7 @@ jobs:
 
       - name: Login to Amazon ECR
         run: |
-          aws ecr get-login-password --region "$AWS_REGION" |             docker login --username AWS --password-stdin 3901440247.dkr.ecr.us-east-1.amazonaws.com
+          aws ecr get-login-password --region "$AWS_REGION" |             docker login --username AWS --password-stdin 390144140247.dkr.ecr.us-east-1.amazonaws.com
 
       - name: Build Docker image
         run: |
